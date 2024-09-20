@@ -401,3 +401,381 @@ p{
     z-index: -1;
 }
 
+@media only screen and (min-width:768px){
+    #services .service-buttom .service-item {
+        flex-basis: 45%;
+        margin: 2.5%;
+    }
+}
+
+@media only screen and (min-width:500px){
+    #services .service-buttom .service-item {
+        flex-basis: 22%;
+        margin: 1.5%;
+    }
+}
+
+/* #projects .projects{
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px 0;
+
+}
+#projects .project-header h1{
+    margin-bottom: 50px;
+
+}
+#projects .all-projects{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#projects .project-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 80%;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+#projects .project-info{
+    padding: 30px;
+    flex-basis: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+    color: white;
+}
+#projects .project-info h1{
+    font-size: 4rem;
+    font-weight: 500;
+}
+#projects .project-info h2{
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-top: 10px;
+}
+#projects .project-info p{
+    color: white;
+}
+#projects .project-img{
+    flex-basis: 50%;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+}
+#projects .project-img::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    word-wrap: 100%;
+    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+    opacity: 0.7;
+}
+#projects .project-img img{
+    transition: 0.3s ease transform;
+}
+#projects .project-item .project-img img{
+    transform: scale(1.1);
+}
+@media only screen and (min-width: 760px){
+    #projects .project-item{
+        flex-direction: row;
+    }
+    #projects .project-item:nth-child(even){
+        flex-direction: row-reverse;
+    }
+    #projects .project-item{
+        height: 400px;
+        margin: 0;
+        width: 100%;
+        border-radius: 0;
+
+    }
+    #projects .all-projects .project-img{
+        height: 100%;
+    }
+    #projects .all-projects .project-info{
+        height: 100%;
+    }
+} */
+
+
+#projects .projects {
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px 20px; /* Padding for smaller screens */
+}
+
+#projects .project-header h1 {
+    margin-bottom: 50px;
+    text-align: center; /* Centering the header */
+}
+
+#projects .all-projects {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#projects .project-item {
+    display: flex;
+    align-items: stretch; /* Ensures even height */
+    justify-content: center;
+    flex-direction: column;
+    width: 90%; /* Adjusted for responsiveness */
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Added shadow for depth */
+}
+
+#projects .project-info {
+    padding: 30px;
+    flex: 1; /* Allow it to grow */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+    color: white;
+}
+
+#projects .project-info h1 {
+    font-size: 2.5rem; /* Adjusted size for better readability */
+    font-weight: 500;
+    margin-bottom: 10px; /* Added margin for spacing */
+}
+
+#projects .project-info h2 {
+    font-size: 1.6rem; /* Slightly smaller for consistency */
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+#projects .project-info p {
+    color: white;
+    margin-top: 10px; /* Added margin for spacing */
+}
+
+#projects .project-img {
+    flex: 1; /* Allow it to grow */
+    overflow: hidden;
+    position: relative;
+}
+
+#projects .project-img::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%; /* Ensures the overlay covers the image */
+    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+    opacity: 0.7;
+}
+
+#projects .project-img img {
+    width: 100%; /* Ensure images are responsive */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensure images fill their container */
+    transition: transform 0.3s ease; /* Transition for scaling effect */
+}
+
+#projects .project-item:hover .project-img img {
+    transform: scale(1.05); /* Slight scale on hover for a subtle effect */
+}
+
+@media only screen and (min-width: 760px) {
+    #projects .project-item {
+        flex-direction: row; /* Layout adjustment for larger screens */
+    }
+    
+    #projects .project-item:nth-child(even) {
+        flex-direction: row-reverse; /* Alternate layout for even items */
+    }
+
+    #projects .project-item {
+        height: 400px; /* Fixed height for uniformity */
+        margin: 0; /* Remove extra margin */
+        width: 100%;
+        border-radius: 0; /* Remove border-radius on larger screens */
+    }
+
+    #projects .project-img {
+        height: 100%; /* Full height */
+    }
+
+    #projects .project-info {
+        height: 100%; /* Full height */
+    }
+}
+
+
+#about .about{
+    flex-direction: column-reverse;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px 20px;
+}
+#about .col-left{
+    width: 250px;
+    height: 360px;
+}
+#about .col-right{
+    width: 100%;
+
+
+}
+#about .col-right h2{
+    font-size: 1.8rem;
+    font-weight: 500;
+    letter-spacing: 0.2rem;
+    margin-bottom: 10px;
+}
+
+#about .col-right p{
+    margin-bottom: 20px;
+}
+#about .col-right .cta{
+    color: black;
+    margin-bottom: 50px;
+    padding: 10px 20px;
+    font-size: 2rem;
+}
+
+#about .col-left .about-img{
+    height: 500px;
+    width: 100%;
+    position: relative;
+    border: 10px solid white;
+}
+#about .col-left .about-img::after{
+    content: "";
+    position: absolute;
+    border: 7px solid crimson;
+    top: 15px;
+    left: -15px;
+    height: 250px;
+    width: 150px;
+    z-index: -1;
+}
+@media screen and (min-width: 768px){
+    #about .about {
+        flex-direction: row;
+    }
+    #about .col-left{
+        width: 600px;
+        height: 400px;
+        padding-left: 60px;
+    }
+    #about .about .col-left .about-img::after{
+        left: -45px;
+        top: 34px;
+        height: 98%;
+        width: 98%;
+        border: 10px solid crimson;
+    }
+    #about .col-right{
+        text-align: left;
+        padding: 30px;
+    }
+    #about .col-right h1{
+        text-align: left;
+    }
+    
+}
+#Contact .contact-container{
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 98%;
+    
+}
+#Contact   .conatact-items{
+    width: 100%;
+}
+ #Contact  .contact-item{
+    width: 80%;
+    /* padding: 20px; */
+    text-align: center;
+    border-radius: 10px;
+    padding-inline: 30px;
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0px 0px 18px 0 #0000002c;
+    transition: 0.3s ease box-shadow;
+ }
+ #Contact .contact-item:hover{
+    box-shadow: 0px 0px 5px 0 #0000002c;
+ }
+ #Contact .icon{
+    width: 70px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+ }
+ #Contact  .contact-info h1{
+ font-size: 2.5rem;
+ font-weight: 500;
+ margin-bottom: 5px;
+
+ }
+ #Contact  .contact-info h2{
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 2rem;
+ }
+   
+@media only screen and (min-width: 760px){
+    #Contact .contact-container{
+        flex-direction: column;
+        pad: 100px 0;
+        align-items: center;
+        justify-content: center;
+        min-width: 100vh;
+    }
+    #Contact   .conatact-items{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin: 0;
+    }
+    #Contact  .contact-item{
+        width: 30%;
+        margin: 0;
+        flex-direction: row;
+    }
+    #Contact  .contact-item .icon{
+        height: 100px;
+        width: 100px;
+    }
+    #Contact  .contact-item .icon img{
+        object-fit: cover;
+        margin-left: 20px;
+        margin: 20px;
+    }
+    #Contact  .contact-item .contact-info{
+        text-align: left;
+        width: 100%;
+        margin-left: -5px;
+        margin: 10px;
+    }
+}
+
+#footer .footer-container{
+    
+}
