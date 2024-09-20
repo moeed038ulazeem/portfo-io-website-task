@@ -27,3 +27,13 @@ document.addEventListener("scroll", () => {
 
 //projects slider
 
+function toggleMenu() {
+    const hamburger = document.querySelector('.hamburger');
+    const menu = document.querySelector('.menu');
+
+    // Toggle active class on hamburger
+    hamburger.classList.toggle('active');
+
+    // Toggle active class on menu
+    menu.classList.toggle('active');
+}

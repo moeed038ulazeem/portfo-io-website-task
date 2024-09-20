@@ -17,7 +17,7 @@
                     </a>
                 </div>
                 <div class="nav-list">
-                    <div class="hamburger">
+                    <!-- <div class="hamburger onclick="toggleMenu()">
                         <div class="bar">
 
                         </div>
@@ -28,8 +28,19 @@
                             <li><a href="#about" data-after="Home">About</a></li>
                             <li><a href="#contact" data-after="Home">Contact</a></li>
                         </ul>
+                    </div> -->
+                    <div class="hamburger" onclick="toggleMenu()">
+                        <div class="bar"></div>
                     </div>
-                </DIV>
+                    <nav class="menu">
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#projects">Projects</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
         </div>
     </section>
@@ -88,68 +99,46 @@
     </section>
 
     <!----servics section end-->
-
-
+Projects
+<br>
+<br>
     <!----project section start-->
-    <section id="projects">
-        <div class="project container">
-            <div class="project-header">
-                <h1 class="section-title">Rececnt <span>projects</span></h1>
+    <section id="portfolio" class="section" style="margin-top: -100px;">
+        <div class="container">
+            <div>
+            <h2>Pro<span style="color: crimson;">je</span>cts</h2>
             </div>
-            <div class="all-projects">
-                <!------project 1-->
-                <div class="project-item">
-                    <div class="project-info">
-                        <h1>project 1</h1>
-                        <h2>Html is love</h2>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse labore blanditiis illo maiores accusantium dolores enim, nesciunt quo repudiandae aspernatur ab earum inventore nobis odio consectetur libero? Rem, porro sed.
-                    </div>
-                    <div class="project-img">
-                        <img src="./images/back4.jpg" alt="image of project 1">
-                    </div>
+            <br>
+            <br>
+            <div class="portfolio-items">
+                <div class="portfolio-item">
+                    <img src="./images/A.png" alt="Project 1">
+                    <h3 style="color: red;">Project 1::</h3>
+                    <p><i style="color: white;">started date ::: 03/mar/ 2024</i></p>
+                    <p><i style="color: white;">Complete In  ::: 10/mar/2024</i></p>
+                    <p style="color: white;">Designed and developed a responsive and secure login page , focusing on user authentication and seamless user experience.  . </p>
                 </div>
+                <div class="portfolio-item">
+                    <img src="./images/B.png" alt="Project 2">
+                    <h3 style="color: red;">Project 2::</h3>
+                    <p><i style="color: white;">started date ::: 06/july/ 2024</i></p>
+                    <p><i style="color: white;">Complete In  ::: 08/july/2024</i></p>
+                    <p style="color: white;">I create a sleek and functional web-based calculator using HTML, CSS, and JavaScript, blending minimalist design with powerful functionality.  </p>
 
-                <!----project2-->
-                <div class="project-item"></div>
-                    <div class="project-info">
-                        <h1>project 1</h1>
-                        <h2>Html is love</h2>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse labore blanditiis illo maiores accusantium dolores enim, nesciunt quo repudiandae aspernatur ab earum inventore nobis odio consectetur libero? Rem, porro sed.
-                    </div>
-                    <div class="project-img">
-                        <img src="./images/back4.jpg" alt="image of project 1">
-                    </div>
+                    
                 </div>
-<!-----project 3-->
+                <div class="portfolio-item">
+                    <img src="./images/2024-09-20.png" alt="Project 2">
+                    <h3 style="color: red;">Project 3::</h3>
+                    <p><i style="color: white;">started date ::: 02/sep/ 2024</i></p>
+                    <p><i style="color: white;">Complete In  ::: 02/sep/2024</i>
+                    </p>A task based on JavaScript, in this task when user click on light-Mode button so the website color change into Dark and if click on day-Mode the website display change into white Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere perspiciatis magnam libero iusto exercitationem mollitia hic saepe corrupti  quia, dicta tenetur dolorum suscipit fugiat a necessitatibus sunt alias quos. </p>
 
-                <div class="project-item"></div>
-                    <div class="project-info">
-                        <h1>project 1</h1>
-                        <h2>Html is love</h2>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse labore blanditiis illo maiores accusantium dolores enim, nesciunt quo repudiandae aspernatur ab earum inventore nobis odio consectetur libero? Rem, porro sed.
-                    </div>
-                    <div class="project-img">
-                        <img src="./images/back4.jpg" alt="image of project 1">
-                    </div>
-                </div>
-
-
-                <!------project 4-->
-                <div class="project-item"></div>
-                    <div class="project-info">
-                        <h1>project 1</h1>
-                        <h2>Html is love</h2>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse labore blanditiis illo maiores accusantium dolores enim, nesciunt quo repudiandae aspernatur ab earum inventore nobis odio consectetur libero? Rem, porro sed.
-                    </div>
-                    <div class="project-img">
-                        <img src="./images/back4.jpg" alt="image of project 1">
-                    </div>
-                </div>
+                <!-- Add more portfolio items as needed -->
             </div>
-
         </div>
     </section>
-    <!----project section end-->
+
 
 
     <!----about section start-->
@@ -213,14 +202,20 @@
     </section>
     <!----contact section end-->
 
-
+<br>
+<br>
+<br>
     <!----footer section start-->
 <section id="footer">
-    <div class="footer-container">
+    <div class="footer-container" style="text-align: center;">
         <div class="brand">
-            <h1><span>M</span>OEED <span>U</span>L <span>A</span>ZEEM</h1>
+            <h1 style="text-align: center;"><span>M</span>OEED <span>U</span>L <span>A</span>ZEEM</h1>
         </div>
-        <h2>your complete web soloution</h2>
+        <h2 style="color: white;  font-weight: 500;
+        font-size: 1.8rem;
+        letter-spacing: 0.3rem;
+        margin-top: 10px;
+        margin-bottom: 10px">your complete web soloution</h2>
         <div class="social-icons">
             <!----github-->
             <div class="social-items">
@@ -236,7 +231,7 @@
                 <a href="#"><img src="./icons/icons8-linkedin-48.png" ></a>
             </div>
         </div>
-        <p>Copyright &copy; Moeed. All right reserved</p>
+        <p style="text-align: center;">Copyright &copy; Moeed. All right reserved</p>
     </div>
 
 </section>
